@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri - SINKAI</title>
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style3.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <img src="images/logo.png" alt="" class="header__img" />
+
+        <a href="index.html" class="header__logo">SINKAI</a>
+
+        <a href="#" class="header__judul"
+          >Sistem Informasi Ketersediaan Air Irigasi</a
+        >
+
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="index.html" class="nav__link nav__logo">
+            <i class="bx bxs-leaf nav__icon"></i>
+            <span class="nav__logo-name">SINKAI</span>
+          </a>
+
+          <div class="nav__list">
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Selamat Datang</h3>
+
+              <a href="index.html" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Halaman Utama</span>
+              </a>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-bar-chart nav__icon"></i>
+                  <span class="nav__name">Data Debit (Alat)</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="irigasi1.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 1</a
+                    >
+                    <a href="irigasi2.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 2</a
+                    >
+                    <a href="irigasi3.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Data Debit (Manual)</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="irigasimanual1.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 1</a
+                    >
+                    <a href="irigasimanual2.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 2</a
+                    >
+                    <a href="irigasimanual3.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Galeri</h3>
+
+              <a href="infografis.html" class="nav__link">
+                <i class="bx bx-news nav__icon"></i>
+                <span class="nav__name">Berita Subak</span>
+              </a>
+              <a href="galeri.html" class="nav__link">
+                <i class="bx bx-photo-album nav__icon"></i>
+                <span class="nav__name">Galeri SINKAI</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.link/tph9u8" class="nav__link nav__logout">
+          <i class="bx bx-info-circle nav__icon"></i>
+          <span class="nav__name">Informasi</span>
+        </a>
+      </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <section>
+      <div class="lightBox">
+        <div class="lightBox_content">
+          <i class="fas fa-times close"></i>
+          <div class="logo_icons">
+            <a href="#">
+              <img class="logoImg" src="images/logo.png" alt="" />
+              <div class="text_content">
+                <span class="name">SINKAI Subak</span>
+                <span class="followers"
+                  >Sistem Informasi Ketersediaan Air Irigasi di Subak</span
+                >
+              </div>
+            </a>
+            <div class="icons">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-arrow-down"></i>
+            </div>
+          </div>
+          <div class="showImg">
+            <div class="image">
+              <img src="images/img1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-gallery">
+        <header>SINKAI GALERI</header>
+        <div class="image-container">
+          <div class="image-box">
+            <img class="gImg" src="images/img1.jpg" alt="" />
+            <div class="logo_icons">
+              <a href="#">
+                <img class="logoImg" src="images/logo.png" alt="" />
+                <div class="text_content">
+                  <span class="name">SINKAI Subak</span>
+                  <span class="followers"
+                    >Bangunan Ukur Subak Gede Tungkub</span
+                  >
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img class="gImg" src="images/galeri3.jpg" alt="" />
+            <div class="logo_icons">
+              <a href="#">
+                <img class="logoImg" src="images/logo.png" alt="" />
+                <div class="text_content">
+                  <span class="name">SINKAI Subak</span>
+                  <span class="followers"
+                    >Papan Eksploitasi DI Tukad Sungi</span
+                  >
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img class="gImg" src="images/galeri1.jpg" alt="" />
+            <div class="logo_icons">
+              <a href="#">
+                <img class="logoImg" src="images/logo.png" alt="" />
+                <div class="text_content">
+                  <span class="name">SINKAI Subak</span>
+                  <span class="followers"
+                    >Alat ukur tinggi muka air (debit)</span
+                  >
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <img class="gImg" src="images/galeri2.jpg" alt="" />
+            <div class="logo_icons">
+              <a href="#">
+                <img class="logoImg" src="images/logo.png" alt="" />
+                <div class="text_content">
+                  <span class="name">SINKAI Subak</span>
+                  <span class="followers">Daerah Irigasi Tungkub</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-box">
+            <!--img class="gImg" src="images/img5.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img6.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img7.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img8.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img9.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img10.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img11.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img12.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img13.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img14.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="image-box">
+            <!--img class="gImg" src="images/img15.jpg" alt=""-->
+            <div class="logo_icons">
+              <a href="#">
+                <!--img class="logoImg" src="images/logo.png" alt=""-->
+                <div class="text_content">
+                  <span class="name">CodingLab</span>
+                  <span class="followers">50k followers</span>
+                </div>
+              </a>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let body = document.querySelector("body"),
+        lightBox = document.querySelector(".lightBox"),
+        img = document.querySelectorAll(".gImg"),
+        showImg = lightBox.querySelector(".showImg img"),
+        close = lightBox.querySelector(".close");
+
+      for (let image of img) {
+        image.addEventListener("click", () => {
+          showImg.src = image.src;
+          lightBox.style.display = "block";
+          body.style.overflow = "hidden";
+          close.onclick = () => {
+            lightBox.style.display = "none";
+            body.style.overflow = "visible";
+          };
+        });
+      }
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

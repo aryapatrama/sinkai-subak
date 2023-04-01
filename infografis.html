@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita - SINKAI</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style2.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  </head>
+
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <img src="images/logo.png" alt="" class="header__img" />
+
+        <a href="index.html" class="header__logo">SINKAI</a>
+
+        <a href="#" class="header__judul"
+          >Sistem Informasi Ketersediaan Air Irigasi</a
+        >
+
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="index.html" class="nav__link nav__logo">
+            <i class="bx bxs-leaf nav__icon"></i>
+            <span class="nav__logo-name">SINKAI</span>
+          </a>
+
+          <div class="nav__list">
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Selamat Datang</h3>
+
+              <a href="index.html" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Halaman Utama</span>
+              </a>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-bar-chart nav__icon"></i>
+                  <span class="nav__name">Data Debit (Alat)</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="irigasi1.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 1</a
+                    >
+                    <a href="irigasi2.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 2</a
+                    >
+                    <a href="irigasi3.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Data Debit (Manual)</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="irigasimanual1.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 1</a
+                    >
+                    <a href="irigasimanual2.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 2</a
+                    >
+                    <a href="irigasimanual3.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Galeri</h3>
+
+              <a href="infografis.html" class="nav__link">
+                <i class="bx bx-news nav__icon"></i>
+                <span class="nav__name">Berita Subak</span>
+              </a>
+              <a href="galeri.html" class="nav__link">
+                <i class="bx bx-photo-album nav__icon"></i>
+                <span class="nav__name">Galeri SINKAI</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.link/tph9u8" class="nav__link nav__logout">
+          <i class="bx bx-info-circle nav__icon"></i>
+          <span class="nav__name">Informasi</span>
+        </a>
+      </nav>
+    </div>
+
+    <section class="container" id="posts">
+      <div class="posts-container">
+        <div class="post">
+          <img src="images/blog-1.jpg" alt="" class="image" />
+          <div class="date">
+            <i class="far fa-clock"></i>
+            <span>20 Maret 2023</span>
+          </div>
+          <h3 class="title">Informasi Subak Gede Tungkub</h3>
+          <p class="text" style="text-indent: 40px">
+            Subak Gede Tungkub berada di 2 kabupaten yang berbeda yakni Badung
+            dan Tabanan, provinsi Bali. Subak ini juga terletak di Daerah Aliran
+            Sungai (DAS) Sungi mempunyai luasan baku 1.092 ha, yang kebutuhan
+            air irigasinya dipenuhi oleh Bendung Tungkub. Subak Gede ini terbagi
+            menjadi 6 subak yang terdiri atas Subak Tungkub Mengwi, Subak
+            Tungkub 1, Subak Tungkub Lanyahan, Subak Tungkub Dalem, Subak
+            Tungkub 2, dan Subak Tungkub 3.
+          </p>
+          <p class="text" style="text-indent: 40px">
+            Jadwal tanam di setiap Subak yang berada di Subak Gede Tungkub
+            memiliki waktu yang berbeda-beda. Pertama di Subak Tungkub Mengwi
+            memiliki jadwal tanam 5 kali dalam kurun waktu 2 tahun, yang
+            dilaksanakan antara bulan Maret/April, Juli/Agustus,
+            November/Desember. Selanjutnya di Subak Tungkub 1 memiliki jadwal
+            tanam pada Juni/Juli dan November/Desember setiap tahunnya. Ketiga
+            di Subak Tungkub Lanyahan dilaksanakan 2 kali dalam setahun pada
+            bulan Juni/Juli dan November/Desember. Pada Subak Tungkub Dalem
+            Jadwal tanamnya pada bulan Juni dan Desember. Terakhir pada Subak
+            Tungkub 2 dan 3 memiliki jadwal tanam yang sama yakni pada bulan Mei
+            dan November.
+          </p>
+          <div class="links">
+            <a href="#" class="user">
+              <i class="far fa-user"></i>
+              <span>by admin</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="images/blog-2.jpg" alt="" class="image" />
+          <div class="date">
+            <i class="far fa-clock"></i>
+            <span>17 Maret 2023</span>
+          </div>
+          <h3 class="title">Irrigation Monitoring Logger (IM-Logger)</h3>
+          <p class="text" style="text-indent: 40px">
+            Irrigation Monitoring Logger (IM-Logger) merupakan alat monitoring
+            pengukur debit saluran irigasi, dimana pencatatannya dilakukan
+            secara real-time dan dapat dipantau melalui aplikasi android. Alat
+            ini akan diaplikasikan pada salah satu bangunan ukur debit di Daerah
+            Irigasi Tungkub, Tabanan, Bali.
+          </p>
+          <p class="text" style="text-indent: 40px">
+            Alat monitoring ini dibangun dengan memanfaatkan development board
+            NodeMcu V3 yang mengintegrasikan mikrokontroler Tensilica 32-bit
+            RISC CPU Xtensa LX106 dengan ESP6266. Sensor yang digunakan untuk
+            mendeteksi perubahan tinggi dan rendah air adalah sensor ultrasonic
+            JSN-SR04T yang bersifat waterproof. Hasil pembacaan tinggi muka air
+            akan dimasukkan kedalam rumus hubungan tinggi muka air dan debit,
+            sehingga outputnya berupa debit air. Alat ini juga akan dilengkapi
+            catu daya dengan tenaga surya serta dapat dipantau pada aplikasi
+            android.
+          </p>
+          <div class="links">
+            <a href="#" class="user">
+              <i class="far fa-user"></i>
+              <span>by admin</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="images/blog-3.jpg" alt="" class="image" />
+          <div class="date">
+            <i class="far fa-clock"></i>
+            <span>14 Februari 2023</span>
+          </div>
+          <h3 class="title">
+            Realisasi Kerjasama, FTP Unud Gandeng JIRCAS Jepang Melaksanakan
+            Pengabdian Masyarakat di Daerah Irigasi Tungkub, Mengwi Bali
+          </h3>
+          <p class="text" style="text-indent: 40px">
+            Fakultas Teknologi Pertanian Universitas Udayana bekerjasama dengan
+            Japan International Research Center for Agricultural Sciences
+            (JIRCAS) telah melaksanakan kegiatan pengabdian kepada masyarakat
+            dengan tema Digitalisasi Pencatatan Debit Air Irigasi di Daerah
+            Irigasi Tungkub, Mengwi Bali pada Minggu, 12 Februari 2022 Kegiatan
+            ini dihadiri oleh Dekan Fakultas Teknologi Pertanian Prof.Ir. I Made
+            Anom Sutrisna Wijaya, M.App.Sc., Ph.D., Seluruh Wakil Dekan FTP
+            Unud, Seluruh Koordinator Prodi FTP Unud, Krama Subak, Pakaseh,
+            Pengamat Irigasi DAS Sungi Bpk Agus Mahendra dan Staff Observasi
+            Irigasi DAS Sungi, Dosen Fakultas Teknologi Pertanian dan Ms. Dr.
+            Fumi Okura dari JIRCAS dan Bapak Septian Fauzi Dwi Saputra yang
+            merupakan mahasiswa Tokyo University of Agriculture and Technology
+            (TUAT).
+          </p>
+          <p class="text" style="text-indent: 40px">
+            Kegiatan yang dilakukan adalah sosialisasi Alat Pemantau Debit Air
+            Otomatis, yang selanjutnya akan mencakup pelatihan penggunaan alat
+            tersebut serta proses Pemasangan Peralatan yang tentunya memiliki
+            izin dari kantor BWS (Badan Wilayah Sungai) yang nantinya melakukan
+            monitoring dan evaluasi terkait peralatan yang telah terpasang,
+            selain itu mengadakan diskusi dengan Dr. Fumi Okura dari JIRCAS
+            Jepang mengenai permasalahan yang dihadapi, peralatan yang akan
+            dipasang, dan sistem subak yang diterapkan serta kebiasaan yang
+            dilakukan oleh seluruh Pakaseh menurut Tempekan di Daerah Irigasi
+            Tungkub. Dekan Fakultas Teknologi Pertanian berharap kegiatan ini
+            mampu memberikan solusi atas permasalahan yang ditemukan Pakaseh di
+            Daerah Irigasi Tungkub, dan kedepannya diharapkan kerjasama ini
+            berkembang baik dalam bidang Pendidikan dan Penelitian.
+          </p>
+          <div class="links">
+            <a href="#" class="user">
+              <i class="far fa-user"></i>
+              <span>by admin</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="box">
+          <h3 class="title">Tentang Website Admin</h3>
+          <div class="about">
+            <img src="images/user.png" alt="" />
+            <h3>I Putu Arya Patrama Khrisna Putra</h3>
+            <h2>NIM. 1910531022</h2>
+            <p>
+              Program Studi Teknik Pertanian dan Biosistem, Fakultas Teknologi
+              Pertanian, Universitas Udayana.
+            </p>
+            <div class="follow">
+              <a
+                href="https://web.facebook.com/rama.khrisna.5/"
+                class="fab fa-facebook-f"
+              ></a>
+              <a
+                href="https://twitter.com/AryaPatrama"
+                class="fab fa-twitter"
+              ></a>
+              <a
+                href="https://www.instagram.com/arya_patrama/?hl=id"
+                class="fab fa-instagram"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/arya-patrama/"
+                class="fab fa-linkedin"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

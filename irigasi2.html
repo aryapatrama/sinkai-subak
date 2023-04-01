@@ -1,0 +1,175 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Debit - SINKAI</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <img src="images/logo.png" alt="" class="header__img" />
+
+        <a href="index.html" class="header__logo">SINKAI</a>
+
+        <a href="#" class="header__judul"
+          >Sistem Informasi Ketersediaan Air Irigasi</a
+        >
+
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="index.html" class="nav__link nav__logo">
+            <i class="bx bxs-leaf nav__icon"></i>
+            <span class="nav__logo-name">SINKAI</span>
+          </a>
+
+          <div class="nav__list">
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Selamat Datang</h3>
+
+              <a href="index.html" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Halaman Utama</span>
+              </a>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-bar-chart nav__icon"></i>
+                  <span class="nav__name">Data Debit (Alat)</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="irigasi1.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 1</a
+                    >
+                    <a href="irigasi2.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 2</a
+                    >
+                    <a href="irigasi3.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Data Debit (Manual)</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a href="irigasimanual1.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 1</a
+                    >
+                    <a href="irigasimanual2.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 2</a
+                    >
+                    <a href="irigasimanual3.html" class="nav__dropdown-item"
+                      >Bangunan Ukur 3</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Galeri</h3>
+
+              <a href="infografis.html" class="nav__link">
+                <i class="bx bx-news nav__icon"></i>
+                <span class="nav__name">Berita Subak</span>
+              </a>
+              <a href="galeri.html" class="nav__link">
+                <i class="bx bx-photo-album nav__icon"></i>
+                <span class="nav__name">Galeri SINKAI</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.link/tph9u8" class="nav__link nav__logout">
+          <i class="bx bx-info-circle nav__icon"></i>
+          <span class="nav__name">Informasi</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div class="description">
+        <h2 align="center">Bangunan Pengukur Tinggi Muka Air 2</h2>
+        <iframe
+          class="googlemap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.6114909876255!2d115.16434604038301!3d-8.538847580448047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23ba26b53a429%3A0xd6192f05223a409f!2sJembatan%20Cinta!5e1!3m2!1sid!2sid!4v1680365070637!5m2!1sid!2sid"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <!-- <p>Haloha</p>
+    <button onclick="insertData('sekarang', 'apalah', '3', '4')">
+      Insert
+    </button> -->
+      <select id="monthSelector">
+        <option disabled selected>Pilih Bulan</option>
+      </select>
+      <select id="yearSelector">
+        <option disabled selected>Pilih Tahun</option>
+      </select>
+
+      <div class="" id="noData">
+        <p>Tidak ada data</p>
+      </div>
+
+      <div id="main" style="width: 100%; height: 100%"></div>
+
+      <button class="hidden" id="tableDownloadBtn">Download Table</button>
+
+      <div id="tablecont"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+      const fileId = "1NDlQ2VmnsG3dMxci4oDB8OgmcSDvWoSBFoZz3htsgcw";
+
+      const baseEndpoint = `https://sheets.googleapis.com/v4/spreadsheets/${fileId}/values`;
+      const sheetName = "Sheet1";
+      const columnKeyRange = "A:D";
+      const waterLevelKey = "waterlevel";
+      const dateKey = "date";
+      const timeKey = "time";
+    </script>
+    <script type="module" src="js/charting.js"></script>
+  </body>
+</html>
